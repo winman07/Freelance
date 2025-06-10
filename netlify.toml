@@ -1,0 +1,23 @@
+[build]
+  publish = "/"
+
+[forms]
+  # Form settings for client form
+  [forms.client-contact]
+    name = "client-contact"
+    
+    # Email notification settings
+    [forms.client-contact.email]
+      from = "formsubmission@elitetaxpros.com"
+      subject = "New Client Form Submission"
+      to = "elitetaxpro@outlook.com"
+
+  # Form settings for student form
+  [forms.student-contact]
+    name = "student-contact"
+    
+    # Email notification settings
+    [forms.student-contact.email]
+      from = "formsubmission@elitetaxpros.com"
+      subject = "New Student Form Submission"
+      to = "elitetaxpro@outlook.com"

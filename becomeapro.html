@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Tax Professional - Elite Tax Pros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Logo.jpeg" class="logo" alt="Elite Tax Pros LLC Logo">
+    </header>
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="becomeapro.html" class="active">Become a Pro</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <main>
+        <h2>Become a Tax Professional</h2>
+        
+        <div class="content-wrapper">
+            <div class="text-area">
+                <p>Join our tax training course and start a rewarding career helping individuals and businesses with their tax needs. Our comprehensive training program will give you the skills and knowledge to become a certified tax professional.</p>
+                
+                <div class="benefits">
+                    <h3>Why Choose Our Tax Training Program?</h3>
+                    <ul style="color: #1846e9; margin-bottom: 2rem;">
+                        <li>Comprehensive training on tax preparation</li>
+                        <li>Learn from experienced tax professionals</li>
+                        <li>Professional tax software included</li>
+                        <li>Flexible learning options</li>
+                        <li>Job placement assistance</li>
+                        <li>Ongoing support and continued education</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Replaced fiftystates image with class photo -->
+            <img src="classphoto.jpeg" class="classphoto" alt="Tax Professional Training Class">
+        </div>
+        
+        <div class="lower-section">
+            <div class="form-container">
+                <h3>Request Information About Our Training Program</h3>
+                <form id="studentForm" name="student-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <fieldset>
+                        <!-- Hidden field to prevent spam -->
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        
+                        <input type="hidden" name="form-name" value="student-contact" />
+                        
+                        <legend>Contact Information</legend>
+                        <label for="firstname">
+                            <input id="firstname" name="firstname" class="firstname" type="text" placeholder="First Name" required />
+                        </label>
+                        <label for="lastname">
+                            <input id="lastname" name="lastname" class="lastname" type="text" placeholder="Last Name" required />
+                        </label>
+                        <label for="clientemail">
+                            <input id="clientemail" name="clientemail" class="clientemail" type="email" placeholder="Email" required />
+                        </label>
+                        <label for="clientphone">
+                            <input id="clientphone" name="clientphone" class="clientphone" type="tel" pattern="\d{10}" placeholder="10-digit Phone Number" required />
+                        </label>
+                        
+                        <label for="consent">
+                            <input id="consent" class="classes" type="radio" name="classes" required />
+                            <span>By checking this box you consent to being contacted 
+                            by a representative from Elite Tax Pros LLC.</span>
+                        </label>
+                        
+                        <button type="submit">Request Information</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Elite Tax Pro LLC. All rights reserved.</p>
+        <p>Website design by <a href="https://www.linkedin.com/in/wade-inman-2401aa1a9">Wade Inman</a></p>
+    </footer>
+</body>
+</html>

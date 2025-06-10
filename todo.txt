@@ -1,0 +1,4 @@
+-elitetaxprollc.org
+-Logo Yellow: #cfa434 or rgba(210,162,52,255)
+-Logo Red: #fc040a or rgba(247,6,4,255)
+-Logo Blue: #1846e9 or rgba(24,70,233,255)

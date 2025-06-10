@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Tax Pros - Tax Preparation Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Logo.jpeg" class="logo" alt="Elite Tax Pros LLC Logo">
+    </header>
+    
+    <nav>
+        <a href="home.html" class="active">Home</a>
+        <a href="becomeapro.html">Become a Pro</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <main>
+        <h2>We are Elite Tax Pros!</h2>
+        
+        <!-- Top section with text and image -->
+        <div class="content-wrapper">
+            <div class="text-area">
+                <p>"At Elite Tax Pro LLC. our mission is to help individuals and businesses reduce their tax liability through personalized, 
+                trustworthy service. We go above and beyond to ensure every client feels valued, cared for, and confident in their financial 
+                future. With us, you're not just a number—you're family."</p>
+                
+                <p>Our team of tax professionals is ready to help you with all your tax needs. We offer a wide range of services including 
+                personal and business tax preparation, tax planning, and mobile notary services.</p>
+                
+                <p>With no upfront filing fees, discounts for returning clients, and service in all 50 states, we make tax filing simple and affordable.</p>
+            </div>
+            <img src="Takingclients.jpeg" class="takingclients" alt="Tax Professional with Client">
+        </div>
+        
+        <!-- Lower section with form and cash advance image -->
+        <div class="lower-section">
+            <img src="cashadvance.jpeg" class="fiftystates" alt="Cash advances up to $7,000">
+            
+            <div class="form-container">
+                <h3>Request Information About Our Services</h3>
+                <form id="clientForm" name="client-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <fieldset>
+                        <!-- Hidden field to prevent spam -->
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
+                        
+                        <input type="hidden" name="form-name" value="client-contact" />
+                        
+                        <legend>Contact Information</legend>
+                        <label for="firstname">
+                            <input id="firstname" name="firstname" class="firstname" type="text" placeholder="First Name" required />
+                        </label>
+                        <label for="lastname">
+                            <input id="lastname" name="lastname" class="lastname" type="text" placeholder="Last Name" required />
+                        </label>
+                        <label for="clientemail">
+                            <input id="clientemail" name="clientemail" class="clientemail" type="email" placeholder="Email" required />
+                        </label>
+                        <label for="clientphone">
+                            <input id="clientphone" name="clientphone" class="clientphone" type="tel" pattern="\d{10}" placeholder="10-digit Phone Number" required />
+                        </label>
+                        
+                        <legend>Services Needed</legend>
+                        <label for="serviceTax">
+                            <input id="serviceTax" class="servicerequest" type="checkbox" name="servicerequest" value="Tax Preparation Services" />
+                            <span>Tax Preparation Services</span>
+                        </label>
+                        <label for="serviceNotary">
+                            <input id="serviceNotary" class="servicerequest" type="checkbox" name="servicerequest" value="Notary Service" />
+                            <span>Notary Service</span>
+                        </label>
+                        
+                        <label for="consent">
+                            <input id="consent" class="classes" type="radio" name="classes" required />
+                            <span>By checking this box you consent to being contacted 
+                            by a representative from Elite Tax Pros LLC.</span>
+                        </label>
+                        
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <span><strong>OR</strong></span>
+        <!-- NEW: JotForm Direct Link Section -->
+        <div class="jotform-link">
+            <h3>Ready to start tax preparation now?</h3>
+            <p>Click below to begin tax prep services immediately:</p>
+            <a href="https://form.jotform.com/elitetaxpro/taxprep2024" class="jotform-button" target="_blank">Start Tax Prep Now</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Elite Tax Pro LLC. All rights reserved.</p>
+        <p>Website design by <a href="https://www.linkedin.com/in/wade-inman-2401aa1a9">Wade Inman</a></p>
+    </footer>
+</body>
+</html>
